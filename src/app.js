@@ -19,11 +19,16 @@ window.onload = function() {
     for (let i = 0; i < arr1.length; i++) {
       for (let j = 0; j < arr2.length; j++) {
         for (let k = 0; k < arr3.length; k++) {
-          for (let l = 0; l < arr4.length; l++)
+          for (let l = 0; l < arr4.length; l++) {
             domainName.push(arr1[i] + arr2[j] + arr3[k] + arr4[l]);
+          }
         }
       }
     }
+    return domainName;
   }
-  return domainName;
+
+  let Dominio = generateDomainName(pronoun, adj, noun, extension);
+
+  console.log(Dominio);
 };
